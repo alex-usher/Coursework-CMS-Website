@@ -1,0 +1,7 @@
+#page.php?id=1&title=title
+# -> /page/title
+
+RewriteEngine On
+
+RewriteRule ^page/([0-9]+)/([A-Za-z0-9-]+)/?$ page.php?id=$1&title=$2
+RewriteRule ^blog/([0-9]+)/([A-Za-z0-9-]+)/?$ blog.php?id=$1&title=$2
